@@ -1,7 +1,7 @@
 const BarsikProtibedon = () => {
   return (
-    <div className="my-5">
-      <div className="table-responsive border border-dark border-1 ">
+    <div className="my-5 mx-auto">
+      <div className="table-responsive border border-dark border-1 rounded rounded-1">
         <table className="table table-striped" width="100%">
           <thead>
             <tr>

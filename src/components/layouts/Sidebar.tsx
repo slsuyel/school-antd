@@ -13,7 +13,7 @@ const userRole = {
 
 // Define a default user
 const defaultUser = {
-  role: userRole.ADMIN, // Set the default role here
+  role: userRole.ADMIN,
 };
 
 const Sidebar = () => {
@@ -58,7 +58,7 @@ const Sidebar = () => {
       </div>
       <Menu
         theme="dark"
-        mode="inline"
+        mode="vertical"
         defaultSelectedKeys={["4"]}
         items={sidebarItems}
       />

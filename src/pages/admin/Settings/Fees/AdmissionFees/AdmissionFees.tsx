@@ -1,9 +1,22 @@
+import FeeCollections from "../../../../../components/ui/FeeCollections";
+import { getClasses } from "../../../../../utils/getClasses";
+
 const AdmissionFees = () => {
-    return (
-        <div>
-            <h1>This is AdmissionFees page</h1>
-        </div>
-    );
+  const classes = getClasses();
+
+  return (
+    <div>
+      {classes.map((className) => (
+        <FeeCollections
+          key={className.id}
+          id={className.id}
+          amount={className.amount}
+          classes={className.name}
+          feesType={"ভর্তি ফরম"}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default AdmissionFees;

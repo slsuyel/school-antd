@@ -13,11 +13,10 @@ const NewApplications = () => {
 
   return (
     <div>
-      <div className="bg-white">
-        <div className="my-3">
-          <Button name={"Back"} to={"/"} className={"btn-nil"} />
-        </div>
+      <div className="my-3">
+        <Button name={"Back"} to={"/"} className={"btn-nil"} />
       </div>
+
       <StudentSearch />
 
       <div className="table-responsive">

@@ -7,7 +7,7 @@ import TotalStudents from "./TotalStudents";
 const AdminDashboard = () => {
   return (
     <div>
-      <div className="row mx-auto my-2 ">
+      <div className="row mx-auto my-2">
         <SummaryChart />
         <MonthlyEarn />
       </div>

@@ -36,7 +36,7 @@ function handleLogoutClick() {
 }
 
 const Navbar: React.FC = () => (
-  <div className="d-flex gap-3 align-item-center">
+  <div className="d-flex gap-3 align-item-center ">
     <DayNight />
     <Dropdown.Button
       menu={menuProps}

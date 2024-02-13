@@ -1,7 +1,7 @@
 const TotalStudents = () => {
   return (
-    <div className="">
-      <div className="table-responsive border border-dark border-1">
+    <div className="mx-auto">
+      <div className="table-responsive border border-dark border-1 rounded rounded-1">
         <table width="100%" border={1} className="mb-5 table table-striped">
           <tbody>
             <tr className="text-center">

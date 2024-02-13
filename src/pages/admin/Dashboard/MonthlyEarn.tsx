@@ -60,9 +60,13 @@ const MonthlyEarn = () => {
     };
   }, []);
   return (
-    <div className="col-md-5 ">
+    <div className="col-md-5 mx-auto my-2">
       <div className="card p-2">
-        <canvas height={216} ref={chartRef} />
+        <canvas
+          className="w-100"
+          style={{ minHeight: "162px", maxHeight: "250px", height: "250px" }}
+          ref={chartRef}
+        />
       </div>
     </div>
   );

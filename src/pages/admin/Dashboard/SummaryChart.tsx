@@ -71,9 +71,13 @@ const SummaryChart = () => {
   }, []);
 
   return (
-    <div className="col-md-7 mx-auto ">
+    <div className="col-md-7 mx-auto my-2">
       <div className="p-2 card">
-        <canvas ref={chartRef} />
+        <canvas
+          className="w-100"
+          style={{ minHeight: "162px", maxHeight: "250px", height: "250px" }}
+          ref={chartRef}
+        />
       </div>
     </div>
   );

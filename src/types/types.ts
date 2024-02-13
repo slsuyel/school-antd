@@ -14,3 +14,10 @@ export interface FormErrorInfo {
   outOfDate: boolean;
   values: FormValues;
 }
+
+export type TFeeCollections = {
+  id: number;
+  classes: string;
+  amount: number;
+  feesType: string;
+};

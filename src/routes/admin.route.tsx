@@ -195,11 +195,6 @@ export const adminPaths = [
       },
 
       {
-        name: "Exam Fees",
-        path: "exam-fee",
-        element: <ExamFees />,
-      },
-      {
         name: "Admission Fees",
         path: "admission-fee",
         element: <AdmissionFees />,
