@@ -1,10 +1,32 @@
 import Button from "../../../components/ui/Button";
-
 import Breadcrumb from "../../../components/ui/Breadcrumb";
 import SearchBox from "../../../components/ui/SearchBox";
+import { Dropdown } from "react-bootstrap";
 
 const AllStaff = () => {
   const data = [
+    {
+      id: 1,
+      photo:
+        "https://tepriganjhighschool.edu.bd/public/backend/staffs/1688571420____51607.png",
+      name: "John Doe",
+      incharge: "Mr. Smith",
+      class: "10th Grade",
+      subject: "Mathematics",
+      phone: "123-456-7890",
+      email: "john.doe@example.com",
+    },
+    {
+      id: 1,
+      photo:
+        "https://tepriganjhighschool.edu.bd/public/backend/staffs/1688571420____51607.png",
+      name: "John Doe",
+      incharge: "Mr. Smith",
+      class: "10th Grade",
+      subject: "Mathematics",
+      phone: "123-456-7890",
+      email: "john.doe@example.com",
+    },
     {
       id: 1,
       photo:
@@ -78,41 +100,25 @@ const AllStaff = () => {
                   <td>{item.phone}</td>
                   <td>{item.email}</td>
                   <td>
-                    <div className="dropdown">
-                      <button
-                        className="btn btn-secondary dropdown-toggle"
-                        type="button"
+                    <Dropdown>
+                      <Dropdown.Toggle
+                        variant="secondary"
                         id={`dropdownMenuButton${item.id}`}
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
                       >
                         Action
-                      </button>
-                      <div
-                        className="dropdown-menu"
-                        aria-labelledby={`dropdownMenuButton${item.id}`}
-                      >
-                        <button
-                          className="dropdown-item"
-                          onClick={() => handleView(item.id)}
-                        >
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu>
+                        <Dropdown.Item onClick={() => handleView(item.id)}>
                           View
-                        </button>
-                        <button
-                          className="dropdown-item"
-                          onClick={() => handleEdit(item.id)}
-                        >
+                        </Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleEdit(item.id)}>
                           Edit
-                        </button>
-                        <button
-                          className="dropdown-item"
-                          onClick={() => handleDelete(item.id)}
-                        >
+                        </Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleDelete(item.id)}>
                           Delete
-                        </button>
-                      </div>
-                    </div>
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
                   </td>
                 </tr>
               ))}

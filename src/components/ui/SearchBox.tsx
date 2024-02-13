@@ -99,9 +99,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ placeholder }) => {
     right: "0px",
     top: "0px",
     padding: "17px 11px 12px 11px",
-    borderLeft: "1px solid rgb(209, 213, 219)",
-    borderRadius: "0px 6px 9px 0",
-    border: "1px solid #1ea5ba",
+    // borderLeft: "1px solid rgb(209, 213, 219)",
   };
 
   const leftPanStyle: CSSProperties = {
@@ -111,7 +109,6 @@ const SearchBox: React.FC<SearchBoxProps> = ({ placeholder }) => {
   const formInputStyle: CSSProperties = {
     height: "55px",
     textIndent: "33px",
-    borderRadius: "10px",
   };
 
   const focusStyle: CSSProperties = {
@@ -129,8 +126,8 @@ const SearchBox: React.FC<SearchBoxProps> = ({ placeholder }) => {
 
   return (
     <div className="justify-content-end mx-auto row mb-3">
-      <div className="col-md-4">
-        <div style={formStyle} className="form">
+      <div className="col-md-4 ">
+        <div style={formStyle} className="form border rounded">
           <i style={searchIconStyle} className="fa fa-search"></i>
           <input
             style={{ ...formInputStyle, ...focusStyle }}
@@ -142,7 +139,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ placeholder }) => {
           />
           <span
             style={{ ...micIconStyle, ...leftPanStyle }}
-            className="left-pan btn btn-warning"
+            className="left-pan btn btn-warning rounded-start-0"
             onClick={handleClick}
           >
             Go
