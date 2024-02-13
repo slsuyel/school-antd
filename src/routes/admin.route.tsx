@@ -1,4 +1,4 @@
-import AdminDashboard from "../pages/admin/AdminDashboard";
+import AdminDashboard from "../pages/admin/Dashboard/AdminDashboard";
 import AllStaff from "../pages/admin/Staffs/AllStaff";
 import Attendance from "./../pages/admin/Attendance/Attendance";
 import AllStudents from "./../pages/admin/Students/AllStudents";
