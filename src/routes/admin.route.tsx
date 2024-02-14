@@ -27,6 +27,7 @@ import RegistrationFees from "../pages/admin/Settings/Fees/RegistrationFees/Regi
 import FormFillUpFee from "../pages/admin/Settings/Fees/FormFillUpFee/FormFillUpFee";
 import AddStaffForm from "../pages/admin/Staffs/AddStaffForm";
 import LetterofAppreciation from "../pages/admin/Settings/Fees/LetterofAppreciation/LetterofAppreciation";
+import AddNotice from "../pages/admin/Notice/AddNotice";
 
 export const adminPaths = [
   {
@@ -167,6 +168,11 @@ export const adminPaths = [
         name: "SMS notice",
         path: "sms-notice",
         element: <SmsNotice />,
+      },
+      {
+        name: "Add notice",
+        path: "add-notice",
+        element: <AddNotice />,
       },
     ],
   },

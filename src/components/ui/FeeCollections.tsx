@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const FeeCollections = ({ classes, amount, feesType }: TFeeCollections) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const handleOk = () => {
     setIsModalOpen(false);
   };
@@ -22,20 +23,25 @@ const FeeCollections = ({ classes, amount, feesType }: TFeeCollections) => {
       <div className="card-body">
         <div className="card-head">
           <h2 className="text-center">{classes} শ্রেণী</h2>
-        </div>{" "}
+        </div>
         <table className="table w-100">
           <thead>
             <tr>
-              <th>ক্রমিক নং</th> <th>নাম</th> <th>ফি এর পরমান</th>
-              <th>স্ট্যাটাস</th> <th>অ্যাকশান</th>
+              <th>ক্রমিক নং</th>
+              <th>নাম</th>
+              <th>ফি এর পরমান</th>
+              <th>স্ট্যাটাস</th>
+              <th>অ্যাকশান</th>
             </tr>
-          </thead>{" "}
+          </thead>
           <tbody>
             <tr>
-              <td>১</td> <td>{feesType}</td> <td>{amount}</td>
+              <td>১</td>
+              <td>{feesType}</td>
+              <td>{amount}</td>
               <td>
                 <span className="text-danger">Deactive</span>
-              </td>{" "}
+              </td>
               <td>
                 <Button onClick={showModal} type="primary">
                   Edit
