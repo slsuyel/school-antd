@@ -17,13 +17,13 @@ const Login: React.FC = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        minHeight: "100vh", // Ensure the container takes the full viewport height
+        minHeight: "100vh",
       }}
     >
       <Form
         style={{
-          width: "90%", // Set a relative width for the form
-          maxWidth: 400, // Set a maximum width for the form
+          width: "90%",
+          maxWidth: 400,
         }}
         name="basic"
         labelCol={{ span: 8 }}

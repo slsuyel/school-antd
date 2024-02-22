@@ -1,12 +1,14 @@
 import { Layout } from "antd";
-
 import Sidebar from "./Sidebar";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
+import { useAppSelector } from "../../redux/hooks";
 
 const { Header, Content, Footer } = Layout;
 const MainLayout = () => {
+  const theme = useAppSelector((state) => state.theme.theme);
+
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -32,7 +34,14 @@ const MainLayout = () => {
             position: "fixed",
             width: "100%",
             zIndex: 1000,
-            backgroundColor: scrollY > 0 ? "rgba(0, 21, 41, 0.8)" : "#001529",
+            backgroundColor: !theme
+              ? scrollY > 0
+                ? "rgba(0, 0, 0, 0.8)"
+                : "#001529"
+              : scrollY > 0
+              ? "white"
+              : "white",
+
             backdropFilter: scrollY > 0 ? "blur(4px)" : "none",
             transition: "background-color 0.3s, backdrop-filter 0.3s",
           }}

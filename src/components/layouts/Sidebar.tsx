@@ -1,10 +1,9 @@
+import dblogo from "../../assets/images/dblogo.png";
 import { Layout, Menu } from "antd";
 import { sidebarItemsGenerator } from "../../utils/sidebarItemsGenerator";
-
 import { adminPaths } from "../../routes/admin.route";
-
+import { useAppSelector } from "../../redux/hooks";
 const { Sider } = Layout;
-
 const userRole = {
   ADMIN: "admin",
   FACULTY: "faculty",
@@ -17,8 +16,9 @@ const defaultUser = {
 };
 
 const Sidebar = () => {
+  const theme = useAppSelector((state) => state.theme.theme);
   //   const user = useAppSelector(selectCurrentUser);
-
+  console.log(theme);
   let sidebarItems;
 
   // Use the default user for now
@@ -41,23 +41,28 @@ const Sidebar = () => {
 
   return (
     <Sider
+      theme={theme ? "light" : "dark"}
       breakpoint="lg"
       collapsedWidth="0"
-      style={{ height: "100vh", position: "sticky", top: "0", left: "0" }}
+      style={{
+        height: "100vh",
+        position: "sticky",
+        top: "0",
+        left: "0",
+      }}
     >
       <div
         style={{
-          color: "white",
-          height: "4rem",
+          height: "3rem",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
         }}
       >
-        <h3> Dashboard</h3>
+        <img src={dblogo} alt="" width={150} />
       </div>
       <Menu
-        theme="dark"
+        theme={theme ? "light" : "dark"}
         mode="vertical"
         defaultSelectedKeys={["4"]}
         items={sidebarItems}

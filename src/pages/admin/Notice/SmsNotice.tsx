@@ -8,8 +8,7 @@ const SmsNotice = () => {
     formData.forEach((value, key) => {
       data[key] = value;
     });
-    console.log(data); // Log form data after submission
-    // Here you can perform further actions, like sending data to the server
+    console.log(data);
   };
 
   return (
