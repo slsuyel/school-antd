@@ -30,7 +30,7 @@ const Reports = () => {
   ];
   return (
     <div className={`content-wrapper`}>
-      <div className="content-header bg-white ">
+      <div className="content-header  ">
         <div>
           <Button name={"Back"} className={"btn-nil"} />
         </div>

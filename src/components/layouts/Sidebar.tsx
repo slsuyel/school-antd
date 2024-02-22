@@ -52,6 +52,7 @@ const Sidebar = () => {
       }}
     >
       <div
+        className="border-bottom border-end"
         style={{
           height: "3rem",
           display: "flex",

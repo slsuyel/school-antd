@@ -18,7 +18,7 @@ const PaymentReports = () => {
           <Button className={"btn-nil my-3"} name={"Back"} />
         </div>
 
-        <div className="row bg-white mx-auto">
+        <div className="row mx-auto">
           <div className="col-3-xxxl col-xl-3 col-lg-3 col-12 form-group">
             <select
               className="form-control"

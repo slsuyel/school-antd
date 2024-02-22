@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import { useAppSelector } from "../../redux/hooks";
-
+import "../../styles/Style.css";
 const { Header, Content, Footer } = Layout;
 const MainLayout = () => {
   const theme = useAppSelector((state) => state.theme.theme);
@@ -48,7 +48,7 @@ const MainLayout = () => {
         >
           <Navbar />
         </Header>
-        <Content style={{ margin: "24px 16px 0" }}>
+        <Content className={`${!theme ? "dark " : ""}`}>
           <div
             style={{
               padding: 24,
@@ -59,13 +59,13 @@ const MainLayout = () => {
             <Outlet />
           </div>
         </Content>
-        <Footer>
+        <Footer className={`${!theme ? "dark border-top" : ""}`}>
           <footer>
-            <div className="float-right d-none d-sm-inline">Version 1.0.0</div>
+            <div className="float-right d-none d-sm-inline">Version 1.0.0 </div>
             <strong>
-              Copyright © 2023-2024{" "}
+              Copyright © 2023-2024
               <a href="https://softwebsys.com/">Softweb System Solutions</a>
-            </strong>{" "}
+            </strong>
             All rights reserved.
           </footer>
         </Footer>

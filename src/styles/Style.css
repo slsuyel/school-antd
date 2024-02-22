@@ -1,0 +1,85 @@
+.dark {
+    background-color: #001529bb;
+    color: white;
+}
+
+.dark h1 a {
+    color: #FFD700;
+}
+
+.dark button {
+    background-color: #001529;
+    color: white;
+    border-color: white;
+
+}
+
+
+.dark table {
+    --bs-table-color: white;
+    --bs-table-bg: #212529;
+    --bs-table-border-color: white;
+    --bs-table-striped-bg: rgba(255, 255, 255, 0.05);
+    --bs-table-active-bg: rgba(255, 255, 255, 0.1);
+    --bs-table-hover-bg: rgba(255, 255, 255, 0.075);
+}
+
+.dark .table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-color-type: #c6e3ff;
+    --bs-table-bg-type: #4c4b49;
+}
+
+
+.dark table th {
+    color: rgb(255, 244, 223);
+}
+
+.dark table td {
+    border-bottom: solid 1px #3d4449;
+}
+
+.dark table tbody tr:nth-child(even) {
+    background-color: #3282b8;
+}
+
+.dark table tbody tr:hover {
+    background-color: #3282b8;
+}
+
+.dark .form-control {
+    background-color: #3d4449;
+    color: white;
+}
+
+.dark ::-webkit-input-placeholder {
+    color: pink;
+}
+
+.dark canvas {
+    background-color: #001529;
+}
+
+.dark .card {
+    border: 1px solid rgb(34, 10, 82);
+    --bs-card-title-color: white;
+    --bs-card-subtitle-color: lightgray;
+    --bs-card-border-color: rgba(255, 255, 255, 0.18);
+    --bs-card-bg: #001529;
+    --bs-card-color: white;
+}
+
+.dark .hov-card {
+    transition: background-color 0.3s ease, color 0.3s ease, cursor 0.3s ease;
+}
+
+.dark .hov-card:hover {
+
+    background-color: #001529af;
+    color: #7bcdeb;
+    cursor: grabbing;
+}
+
+.dark .hov-card i {
+    color: #44b8fb;
+    background-color: #ffffff21;
+}

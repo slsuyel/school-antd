@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Breadcrumb = ({ page }) => {
   return (
-    <div className="container-fluid ">
+    <div className="container-fluid mt-5">
       <div className="row mb-2">
         <div className="col-sm-6 ">
           <h1 className="m-0 text-nil">{page}</h1>

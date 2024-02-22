@@ -42,7 +42,7 @@ function AddStaffForm() {
           <Button name={"Back"} to={""} className={"btn-nil"} />
         </div>
 
-        <form className="p-3 py-4 rounded bg-white" onSubmit={handleSubmit}>
+        <form className="p-3 py-4 rounded border" onSubmit={handleSubmit}>
           <div className="row mx-auto">
             <div className="col-md-4">
               <div className="form-group">
@@ -53,7 +53,7 @@ function AddStaffForm() {
                   placeholder="Enter Teacher ID"
                   value={formData.teacherId}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 />
               </div>
             </div>
@@ -66,7 +66,7 @@ function AddStaffForm() {
                   placeholder="Enter Teacher Name"
                   value={formData.teacherName}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 />
               </div>
             </div>
@@ -77,7 +77,7 @@ function AddStaffForm() {
                   name="teacherGender"
                   value={formData.teacherGender}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 >
                   <option value="">SELECT</option>
                   <option value="Male">Male</option>
@@ -95,7 +95,7 @@ function AddStaffForm() {
                   placeholder="Enter Teacher Email"
                   value={formData.teacherEmail}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 />
               </div>
             </div>
@@ -108,7 +108,7 @@ function AddStaffForm() {
                   placeholder="Enter Teacher Password"
                   value={formData.teacherPassword}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 />
               </div>
             </div>
@@ -121,7 +121,7 @@ function AddStaffForm() {
                   placeholder="Enter Teacher Phone Number"
                   value={formData.teacherPhoneNumber}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 />
               </div>
             </div>
@@ -134,7 +134,7 @@ function AddStaffForm() {
                   placeholder="Enter Teacher Address"
                   value={formData.teacherAddress}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 />
               </div>
             </div>
@@ -145,7 +145,7 @@ function AddStaffForm() {
                   name="teacherPosition"
                   value={formData.teacherPosition}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 >
                   <option value="">SELECT</option>
                   <option value="Head Master">Head Master</option>
@@ -169,7 +169,7 @@ function AddStaffForm() {
                   placeholder="Enter Teacher Qualification"
                   value={formData.teacherQualification}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 />
               </div>
             </div>
@@ -180,7 +180,7 @@ function AddStaffForm() {
                   name="inchargeClass"
                   value={formData.inchargeClass}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 >
                   <option value="">SELECT</option>
                   <option value="Six">Six</option>
@@ -199,7 +199,7 @@ function AddStaffForm() {
                   name="teacherDateOfBirth"
                   value={formData.teacherDateOfBirth}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle air-datepicker"
+                  className="form-control  air-datepicker"
                 />
               </div>
             </div>
@@ -211,7 +211,7 @@ function AddStaffForm() {
                   name="teacherJoiningDate"
                   value={formData.teacherJoiningDate}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle air-datepicker"
+                  className="form-control  air-datepicker"
                 />
               </div>
             </div>
@@ -224,7 +224,7 @@ function AddStaffForm() {
                   placeholder="Enter Teacher Working Hours"
                   value={formData.teacherWorkingHours}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 />
               </div>
             </div>
@@ -237,7 +237,7 @@ function AddStaffForm() {
                   placeholder="Enter Teacher Subject Handling"
                   value={formData.teacherSubjectHandling}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 />
               </div>
             </div>
@@ -248,7 +248,7 @@ function AddStaffForm() {
                   name="teacherStatus"
                   value={formData.teacherStatus}
                   onChange={handleInputChange}
-                  className="form-control bg-secondary-subtle"
+                  className="form-control "
                 >
                   <option value="Active">Active</option>
                   <option value="Pending">Pending</option>

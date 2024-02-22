@@ -37,6 +37,8 @@ const NewApplications = () => {
           <tbody>
             <tr>
               <td>2</td>
+
+              <td>image</td>
               <td>Student2</td>
               <td>Class2</td>
               <td>Father2</td>
@@ -62,6 +64,7 @@ const NewApplications = () => {
             </tr>
             <tr>
               <td>2</td>
+              <td>image</td>
               <td>Student2</td>
               <td>Class2</td>
               <td>Father2</td>
@@ -87,6 +90,7 @@ const NewApplications = () => {
             </tr>
             <tr>
               <td>2</td>
+              <td>image</td>
               <td>Student2</td>
               <td>Class2</td>
               <td>Father2</td>
@@ -112,6 +116,7 @@ const NewApplications = () => {
             </tr>
             <tr>
               <td>2</td>
+              <td>image</td>
               <td>Student2</td>
               <td>Class2</td>
               <td>Father2</td>

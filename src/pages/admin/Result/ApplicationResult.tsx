@@ -52,7 +52,7 @@ const ApplicationResult = () => {
         <div className="my-3">
           <Button name={"Back"} className={"btn-nil"} />
         </div>
-        <div className="row bg-white p-3">
+        <div className="row p-3">
           <div className="col-md-3">
             <div className="form-group student_class">
               <label>Class:</label>

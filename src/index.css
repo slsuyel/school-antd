@@ -42,7 +42,6 @@ a {
 }
 
 .hov-card {
-  /* Your default styles */
   transition: background-color 0.3s ease, color 0.3s ease, cursor 0.3s ease;
 }
 
@@ -56,6 +55,12 @@ a {
   color: #453b70;
 }
 
-.hov-card i {
-  background-color: #c26ee721;
+
+
+.form-control:focus,
+.form-select:focus,
+.btn:focus {
+  border-color: #343a40;
+  outline: 0;
+  box-shadow: 0 0 0 0.02rem rgb(0 21 41)
 }

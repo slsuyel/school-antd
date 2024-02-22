@@ -16,8 +16,8 @@ const AllStudents = () => {
 
   return (
     <div className={`content-wrapper`}>
-      <div className="content-header bg-white ">
-        <div className="bg-white">
+      <div className="content-header  ">
+        <div className="">
           <div className="my-3">
             <Button
               name={"Back"}

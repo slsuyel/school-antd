@@ -18,7 +18,7 @@ const MarkSheet = () => {
       <div className="my-3">
         <Button name={"Back"} className={"btn-nil"} />
       </div>
-      <div className="row bg-white  mx-auto">
+      <div className="row  mx-auto">
         <div className="col-md-6">
           <div className="form-group ">
             <label>Class:</label>

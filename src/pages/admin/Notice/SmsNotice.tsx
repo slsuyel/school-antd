@@ -1,5 +1,3 @@
-import React from "react";
-
 const SmsNotice = () => {
   const handleSubmit = (e) => {
     e.preventDefault();

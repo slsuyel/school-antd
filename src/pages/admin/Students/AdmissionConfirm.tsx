@@ -1,7 +1,7 @@
 const AdmissionConfirm = () => {
   return (
     <div className={`content-wrapper`}>
-      <div className="content-header bg-white ">
+      <div className="content-header ">
         <div className="container mt-5 mb-5">
           <div className="form-group">
             <label htmlFor="applicationId">Application Id</label>
