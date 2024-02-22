@@ -13,15 +13,15 @@ const Breadcrumb = ({ page }: TBreadcrumb) => {
     .trim();
 
   return (
-    <div className="">
+    <div className="my-2">
       <div className="row mb-2">
-        <div className="col-sm-6">
+        <div className="col-6">
           <h1 className="m-0 text-nil text-capitalize">{page || pageN}</h1>
         </div>
-        <div className="col-sm-6">
+        <div className="col-6 d-flex justify-content-end">
           <ol className="breadcrumb float-sm-right">
             <li className="breadcrumb-item text-nil">
-              <Link to="/dashboard" className="text-nil">
+              <Link to="/admin/dashboard" className="text-nil">
                 Home
               </Link>
             </li>

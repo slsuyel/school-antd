@@ -17,7 +17,7 @@ const NewApplications = () => {
       <Breadcrumb />
 
       <div className="my-3">
-        <Button name={"Back"} to={"/"} className={"btn-nil"} />
+        <Button name={"Back"} to={"/admin/dashboard"} className={"btn-nil"} />
       </div>
 
       <StudentSearch />

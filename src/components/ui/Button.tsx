@@ -9,7 +9,7 @@ type ButtonProps = {
 const Button = ({ name, className, to }: ButtonProps) => {
   return (
     <Link
-      to={to || "/"}
+      to={to || "/admin/dashboard"}
       className={`border btn mb-2 text-nowrap text-white ${className}`}
       style={{ width: "110px" }}
     >

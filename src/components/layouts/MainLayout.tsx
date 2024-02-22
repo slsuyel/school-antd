@@ -39,7 +39,7 @@ const MainLayout = () => {
                 ? "rgba(0, 0, 0, 0.8)"
                 : "#001529"
               : scrollY > 0
-              ? "white"
+              ? "#fffcfc8a"
               : "white",
 
             backdropFilter: scrollY > 0 ? "blur(4px)" : "none",

@@ -23,7 +23,7 @@ const AllStudents = () => {
           <div className="my-3">
             <Button
               name={"Back"}
-              to={"/dashboard/staff/all-staffs"}
+              to={"/admin/dashboard"}
               className={"btn-nil"}
             />
           </div>

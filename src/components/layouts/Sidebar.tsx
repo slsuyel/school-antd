@@ -18,7 +18,7 @@ const defaultUser = {
 const Sidebar = () => {
   const theme = useAppSelector((state) => state.theme.theme);
   //   const user = useAppSelector(selectCurrentUser);
-  console.log(theme);
+
   let sidebarItems;
 
   // Use the default user for now

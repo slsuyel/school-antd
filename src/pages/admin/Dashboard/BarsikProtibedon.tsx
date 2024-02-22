@@ -1,15 +1,9 @@
 const BarsikProtibedon = () => {
   return (
     <div className="my-5 mx-auto">
-      <div className="table-responsive border border-dark border-1 rounded rounded-1">
+      <h3 className="text-center">বার্ষিক প্রতিবেদন</h3>
+      <div className="table-responsive  rounded rounded-1">
         <table className="table table-striped" width="100%">
-          <thead>
-            <tr>
-              <th colSpan={10} style={{ fontSize: 25, textAlign: "center" }}>
-                <span className="my-2">বার্ষিক প্রতিবেদন</span>
-              </th>
-            </tr>
-          </thead>
           <tbody>
             <tr>
               <th className="border border-1 td text-center p-1">শ্রেণি</th>
