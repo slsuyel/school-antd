@@ -1,3 +1,4 @@
+import Breadcrumb from "../../../components/ui/Breadcrumb";
 import Button from "../../../components/ui/Button";
 
 const ResultLog = () => {
@@ -34,6 +35,7 @@ const ResultLog = () => {
 
   return (
     <div className="">
+      <Breadcrumb />
       <div className="">
         <Button name={"Back"} className={"btn-nil"} />
       </div>

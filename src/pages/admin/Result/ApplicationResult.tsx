@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "../../../components/ui/Button";
+import Breadcrumb from "../../../components/ui/Breadcrumb";
 // import Button from "../../../components/ui/Button"
 
 const ApplicationResult = () => {
@@ -49,6 +50,7 @@ const ApplicationResult = () => {
   return (
     <div className={`content-wrapper`}>
       <div className="content-header">
+        <Breadcrumb />
         <div className="my-3">
           <Button name={"Back"} className={"btn-nil"} />
         </div>

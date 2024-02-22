@@ -1,7 +1,10 @@
+import Breadcrumb from "../../../components/ui/Breadcrumb";
+
 const AdmissionForm = () => {
   return (
     <div className="content-wrapper">
       <div className="content-header ">
+        <Breadcrumb />
         <div className="card height-auto">
           <div className="card-body">
             <form>

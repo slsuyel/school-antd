@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Button from "../../../components/ui/Button";
+
+import Breadcrumb from "../../../components/ui/Breadcrumb";
 
 function AddStaffForm() {
   // State variables to hold form data
@@ -38,9 +39,7 @@ function AddStaffForm() {
   return (
     <div className={`content-wrapper`}>
       <div className="content-header">
-        <div className="my-3">
-          <Button name={"Back"} to={""} className={"btn-nil"} />
-        </div>
+        <Breadcrumb page={"Add Staffs"} />
 
         <form className="p-3 py-4 rounded border" onSubmit={handleSubmit}>
           <div className="row mx-auto">

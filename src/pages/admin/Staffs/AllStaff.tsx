@@ -1,4 +1,3 @@
-import Button from "../../../components/ui/Button";
 import Breadcrumb from "../../../components/ui/Breadcrumb";
 import SearchBox from "../../../components/ui/SearchBox";
 import { Dropdown } from "react-bootstrap";
@@ -60,9 +59,7 @@ const AllStaff = () => {
     <div className={`content-wrapper `}>
       <div className="content-header">
         <Breadcrumb page={"Staffs"} />
-        <div className="d-flex justify-content-between mx-2 my-3">
-          <Button name={"Back"} to={"/admin"} className={"btn-md  btn-nil"} />
-        </div>
+
         <div>
           <SearchBox />
         </div>

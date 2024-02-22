@@ -1,3 +1,4 @@
+import Breadcrumb from "../../../components/ui/Breadcrumb";
 import Button from "../../../components/ui/Button";
 import StudentSearch from "./StudentSearch";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -13,6 +14,8 @@ const NewApplications = () => {
 
   return (
     <div>
+      <Breadcrumb />
+
       <div className="my-3">
         <Button name={"Back"} to={"/"} className={"btn-nil"} />
       </div>

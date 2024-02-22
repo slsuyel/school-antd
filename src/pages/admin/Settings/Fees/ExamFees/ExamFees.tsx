@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ExamFeeCollections from "../../../../../components/ui/ExamFeeCollections";
+import Breadcrumb from "../../../../../components/ui/Breadcrumb";
 
 const ExamFees = () => {
   const [fees, setFees] = useState([]);
@@ -19,6 +20,7 @@ const ExamFees = () => {
 
   return (
     <div>
+      <Breadcrumb />
       <ExamFeeCollections className={"ষষ্ঠ "} data={classSixFees} />
       <ExamFeeCollections className={"সপ্তম"} data={classSevenFees} />
       <ExamFeeCollections className={"অষ্টম "} data={classEightFees} />

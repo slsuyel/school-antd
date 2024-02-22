@@ -46,12 +46,12 @@ export const adminPaths = [
       },
       {
         name: "Staff Attendance",
-        path: "staff/attendance",
+        path: "staff/staff-attendance",
         element: <StaffAttendance />,
       },
       {
         name: "Add Staff",
-        path: "staff/add",
+        path: "staff/add-staff",
         element: <AddStaffForm />,
       },
     ],

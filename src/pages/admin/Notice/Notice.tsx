@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import Breadcrumb from "../../../components/ui/Breadcrumb";
 
 const Notice = () => {
   console.log("live==>", window.location);
 
   return (
     <div>
+      <Breadcrumb />
       <div className="table-responsive">
         <table className="table table-striped">
           <thead>

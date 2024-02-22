@@ -52,7 +52,7 @@
 }
 
 .dark ::-webkit-input-placeholder {
-    color: pink;
+    color: #e3e35c7c;
 }
 
 .dark canvas {

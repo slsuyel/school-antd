@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Button from "../../../components/ui/Button";
+
+import Breadcrumb from "../../../components/ui/Breadcrumb";
 
 const StaffAttendance = () => {
   const [formData, setFormData] = useState({
@@ -27,11 +28,8 @@ const StaffAttendance = () => {
   return (
     <div className={`content-wrapper`}>
       <div className="content-header">
-        <div className="my-5 mx-4">
-          <div>
-            <Button name={"Back"} className={"btn-nil"} />
-          </div>
-
+        <Breadcrumb page={" Staff Attendance"} />
+        <div className="mx-4">
           <form className="row align-items-center" onSubmit={handleSubmit}>
             <div className="col-3-xxxl col-xl-3 col-lg-3 col-12 form-group">
               <label htmlFor="view">View:</label>

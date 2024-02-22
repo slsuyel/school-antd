@@ -52,9 +52,9 @@ const Sidebar = () => {
       }}
     >
       <div
-        className="border-bottom border-end"
+        className="border-bottom "
         style={{
-          height: "3rem",
+          height: "4rem",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",

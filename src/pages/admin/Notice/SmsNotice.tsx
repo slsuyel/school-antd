@@ -1,3 +1,5 @@
+import Breadcrumb from "../../../components/ui/Breadcrumb";
+
 const SmsNotice = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -11,6 +13,7 @@ const SmsNotice = () => {
 
   return (
     <div>
+      <Breadcrumb />
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Class</label>

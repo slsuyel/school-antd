@@ -48,7 +48,10 @@ const MainLayout = () => {
         >
           <Navbar />
         </Header>
-        <Content className={`${!theme ? "dark " : ""}`}>
+        <Content
+          style={{ margin: "24px 0px 0" }}
+          className={`${!theme ? "dark " : ""}`}
+        >
           <div
             style={{
               padding: 24,

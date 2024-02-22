@@ -1,10 +1,11 @@
+import Breadcrumb from "../../../components/ui/Breadcrumb";
 import Button from "../../../components/ui/Button";
 
 const AnnuallyReport = () => {
   return (
     <div className={`content-wrapper`}>
       <div className="content-header">
-        <h1> Annually Report 2024</h1>
+        <Breadcrumb />
 
         <Button className={"btn-nil"} name={"Back"} />
 

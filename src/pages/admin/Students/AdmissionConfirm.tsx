@@ -1,7 +1,10 @@
+import Breadcrumb from "../../../components/ui/Breadcrumb";
+
 const AdmissionConfirm = () => {
   return (
     <div className={`content-wrapper`}>
       <div className="content-header ">
+        <Breadcrumb />
         <div className="container mt-5 mb-5">
           <div className="form-group">
             <label htmlFor="applicationId">Application Id</label>

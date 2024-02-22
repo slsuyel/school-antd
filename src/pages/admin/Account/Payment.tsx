@@ -1,9 +1,11 @@
+import Breadcrumb from "../../../components/ui/Breadcrumb";
 import Button from "../../../components/ui/Button";
 
 const Payment = () => {
   return (
     <div className={`content-wrapper`}>
       <div className="content-header">
+        <Breadcrumb />
         <div className="my-3">
           <Button className={"btn-nil my-3"} name={"Back"} />
         </div>

@@ -1,3 +1,4 @@
+import Breadcrumb from "../../../../../components/ui/Breadcrumb";
 import FeeCollections from "../../../../../components/ui/FeeCollections";
 import { getClasses } from "../../../../../utils/getClasses";
 
@@ -6,6 +7,7 @@ const MonthlyFees = () => {
 
   return (
     <div>
+      <Breadcrumb />
       {classes.map((className) => (
         <FeeCollections
           key={className.id}

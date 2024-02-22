@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../../../components/ui/Button";
 import MarksheetInfo from "./MarksheetInfo";
+import Breadcrumb from "../../../components/ui/Breadcrumb";
 
 const MarkSheet = () => {
   const [classValue, setClassValue] = useState("");
@@ -15,6 +16,7 @@ const MarkSheet = () => {
 
   return (
     <div>
+      <Breadcrumb />
       <div className="my-3">
         <Button name={"Back"} className={"btn-nil"} />
       </div>
